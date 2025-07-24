@@ -1,0 +1,8 @@
+schema_version: 20180708
+name: waf-log-generator
+version: 0.0.2
+runtime: python
+build_image: cdg.ocir.io/idi1o0a010nx/python-repo/python:latest
+run_image: cdg.ocir.io/idi1o0a010nx/python-repo/python:latest
+entrypoint: /python/bin/fdk /function/func.py handler
+memory: 256
